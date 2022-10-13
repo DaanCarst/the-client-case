@@ -2,7 +2,7 @@
 # Vini Mini
 User page voor gebruikers van ViniMini
 
-link:
+link:daancarst.github.io/the-client-case/
 
 ## Inhoudsopgave
 
