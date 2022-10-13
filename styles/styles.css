@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../assets/bgVini.png");
+    background-size: cover;
+    background-position: top center;
   }
   
   nav {
@@ -24,34 +33,58 @@ body {
     color: black;
   }
 
+  .logo {
+    width: 4em;
+  }
+
   .info-name {
     color: #152a45;
   }
 
   .info {
-    width: 20rem;
-    height: 20rem;
-    background-color: rgb(164, 164, 164);
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 20vw;
+    min-height: 15vw;
+    background-color: rgb(244, 235, 52, 0.5);
+    border: 3px solid rgb(244, 235, 52);
+    border-radius: 25px;
+    letter-spacing: 2px;
   }
 
   .left-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50vw;
+    align-items: center;
+    width: 40vw;
+    min-height: 25vw;
+    height: auto;
     background-color: rgb(114, 175, 166, 0.5);
+    box-shadow: 3px 0px 10px rgb(114, 175, 166);
+    border: 4px solid #72afa6;
+    border-radius: 25px;
     /* aspect-ratio: 2/1; */
+
   }
 
   .right-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #72afa6;
-    width: 50vw;
+    align-items: center;
+    background-color: rgb(114, 175, 166, 0.5);
+    box-shadow: 3px 0px 10px rgb(114, 175, 166);
+    border: 4px solid #72afa6;
+    border-radius: 25px;
+    width: 40vw;
+    min-height: 25vw;
+    height: auto;
     /* aspect-ratio: 2/1; */
   }
 
@@ -60,8 +93,59 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
-    padding-top: 10px;
+    gap: 25px;
+    padding-top: 25px;
   }
+
+  .arrow-left-t {
+    height: 3vw;
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    transform: scaleX(-1) translateY(-50%);
+  }
+  .arrow-right-t {
+    height: 3vw;
+    position: absolute;
+    top: 50%;
+    right: -20%;
+    transform: translateY(-50%);
+  }
+
+  header {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.5em;
+  }
+
+  .calander-top, .calander-bottom {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: .5em;
+  }
+
+  .maandag,.dinsdag,.woensdag,.donderdag,.vrijdag,.zaterdag,.zondag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(244, 235, 52, 0.5);
+    border: 3px solid rgb(244, 235, 52);
+    height: 5vw;
+    width: 5vw;
+    border-radius: 25px;
+    transition: transform .4s;
+  }
+
+  .maandag:hover,.dinsdag:hover,.woensdag:hover,.donderdag:hover,.vrijdag:hover,.zaterdag:hover,.zondag:hover {
+    transform: scale(1.2);
+  }
+
 
 
