@@ -97,6 +97,12 @@ body {
     padding-top: 25px;
   }
 
+  @media(max-width: 50rem) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
   .arrow-left-t {
     height: 3vw;
     position: absolute;
